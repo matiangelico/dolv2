@@ -1,3 +1,11 @@
 # Virtual Environment
 env/
 .venv/
+
+# Data (files too large to be stored in git)
+data/
+*.csv
+*.parquet
+
+# Translation db folder
+db/
