@@ -1,0 +1,40 @@
+{
+  "name": "dolv2",
+  "private": true,
+  "scripts": {
+    "git-fetch-prune-verbose": "git fetch --prune --verbose",
+    "git-delete-merged-branches": "git branch | grep -v \"master\" | xargs git branch -D",
+    "prepare": "husky install",
+    "postinstall": "manypkg check",
+    "clone-submodules": "npx vercel-submodules --all",
+    "lint": "turbo lint",
+    "dev": "dotenv -- turbo dev",
+    "build": "dotenv -- turbo build",
+    "test": "turbo test",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx,json,yml,yaml}\"",
+    "all": "pnpm clone-submodules && pnpm format && turbo lint && pnpm build && pnpm test",
+    "version-packages": "pnpm changeset version && pnpm all:packages",
+    "publish-packages": "pnpm all:packages && changeset version && changeset publish"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "manypkg": {
+    "ignoredRules": [
+      "INTERNAL_MISMATCH"
+    ]
+  },
+  "dependencies": {
+    "@changesets/cli": "latest",
+    "@manypkg/cli": "latest",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "dotenv-cli": "latest",
+    "husky": "latest",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "turbo": "latest",
+    "vercel-submodules": "^1.0.10"
+  }
+}

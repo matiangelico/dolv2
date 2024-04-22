@@ -1,0 +1,8 @@
+packages:
+  # include
+  - "apps/*"
+  - "packages/*"
+
+  # exclude
+  - "!**/.next/**"
+  - "!**/node_modules/**"

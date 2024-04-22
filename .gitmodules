@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/dolv2/dolv2-backend
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/dolv2/dolv2-scripts
+[submodule "bash"]
+	path = bash
+	url = https://github.com/dolv2/dolv2-bash

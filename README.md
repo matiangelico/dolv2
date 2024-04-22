@@ -4,4 +4,4 @@ Hello there!
 
 ---
 
-This project is developed and maintained by [@harshraj8843](https://github.com/harshraj8843).
+Made with :heart: by [@harshraj8843](https://github.com/harshraj8843).
