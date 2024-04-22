@@ -7,3 +7,6 @@
 [submodule "bash"]
 	path = bash
 	url = https://github.com/dolv2/dolv2-bash
+[submodule "backup"]
+	path = backup
+	url = https://github.com/dolv2/dolv2-backup
