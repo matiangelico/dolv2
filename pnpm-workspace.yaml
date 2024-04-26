@@ -1,7 +1,7 @@
 packages:
   # include
   - "apps/*"
-  - "packages/*"
+  - "config/*"
 
   # exclude
   - "!**/.next/**"

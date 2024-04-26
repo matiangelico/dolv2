@@ -1,15 +1,16 @@
 import "@/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 import SEO from "@/components/SEO";
 import Layout from "@/layouts";
 import { SiteMetadata } from "@/data";
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "./theme-provider";
 
-const space_grotesk = Space_Grotesk({
+const fontSans = FontSans({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-space-grotesk",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -69,15 +70,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html
-      lang="en"
-      className={`${space_grotesk.variable} scroll-smooth`}
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
       <head>{/* TODO: Add Analytics */}</head>
 
-      <body>
-        <Layout>{children}</Layout>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Layout>{children}</Layout>
+        </ThemeProvider>
       </body>
     </html>
   );

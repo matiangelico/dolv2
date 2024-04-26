@@ -12,7 +12,8 @@
     "build": "dotenv -- turbo build",
     "test": "turbo test",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx,json,yml,yaml}\"",
-    "all": "pnpm clone-submodules && pnpm format && turbo lint && pnpm build && pnpm test",
+    "all": "pnpm format && turbo lint && pnpm build && pnpm test",
+    "all:fresh": "pnpm clone-submodules && pnpm format && turbo lint && pnpm build && pnpm test",
     "version-packages": "pnpm changeset version && pnpm all:packages",
     "publish-packages": "pnpm all:packages && changeset version && changeset publish"
   },

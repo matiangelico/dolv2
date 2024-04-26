@@ -1,0 +1,64 @@
+# dolv2
+
+## 2.0.1
+
+### Patch Changes
+
+- Add Giscus Comment
+- Add Firebase
+- Add language flag
+- More supported languages
+
+  | Language    | Code  |
+  | ----------- | ----- |
+  | Albanian    | sq-AL |
+  | Azerbaijani | az-AZ |
+  | Danish      | da-DK |
+  | Dutch       | nl-NL |
+  | Estonian    | et-EE |
+  | Greek       | el-GR |
+  | Hindi       | hi-IN |
+  | Irish       | ga-IE |
+  | Latvian     | lv-LV |
+  | Lithuanian  | lt-LT |
+  | Malay       | ms-MY |
+  | Norwegian   | nb-NO |
+  | Persian     | fa-IR |
+  | Slovak      | sk-SK |
+  | Slovenian   | sl-SI |
+  | Swedish     | sv-SE |
+  | Tagalog     | tl-PH |
+  | Thai        | th-TH |
+  | Ukranian    | uk-UA |
+
+## 2.0.0
+
+### Major Changes
+
+- Dolores v2
+- Supported Languages
+
+  | Language   | Code  |
+  | ---------- | ----- |
+  | Arabic     | ar-SA |
+  | Bengali    | bn-BD |
+  | Bulgarian  | bg-BG |
+  | Catalan    | ca-ES |
+  | Chinese    | zh-CN |
+  | Czech      | cs-CZ |
+  | English    | en-US |
+  | Finnish    | fi-FI |
+  | French     | fr-FR |
+  | German     | de-DE |
+  | Hebrew     | he-IL |
+  | Hungarian  | hu-HU |
+  | Indonesian | id-ID |
+  | Italian    | it-IT |
+  | Japanese   | ja-JP |
+  | Korean     | ko-KR |
+  | Polish     | pl-PL |
+  | Portuguese | pt-PT |
+  | Romanian   | ro-RO |
+  | Russian    | ru-RU |
+  | Spanish    | es-ES |
+  | Turkish    | tr-TR |

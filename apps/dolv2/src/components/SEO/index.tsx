@@ -19,7 +19,7 @@ export default function SEO({
     title:
       title === SiteMetadata.title ? title : `${title} | ${SiteMetadata.title}`,
     description: description || SiteMetadata.description,
-    keywords: rest.keywords || SiteMetadata.keywords,
+    keywords: [...(rest.keywords || []), ...(SiteMetadata.keywords || [])],
     openGraph: {
       title: `${title} | ${SiteMetadata.title}`,
       description: description || SiteMetadata.description,
