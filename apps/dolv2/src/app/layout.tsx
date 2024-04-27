@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import SEO from "@/components/SEO";
 import Layout from "@/layouts";
 import { SiteMetadata } from "@/data";
@@ -71,7 +72,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>{/* TODO: Add Analytics */}</head>
+      {/* <head></head> */}
 
       <body
         className={cn(
@@ -87,6 +88,8 @@ export default function RootLayout({
         >
           <Layout>{children}</Layout>
         </ThemeProvider>
+
+        <Analytics />
       </body>
     </html>
   );

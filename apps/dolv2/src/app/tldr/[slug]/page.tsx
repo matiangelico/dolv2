@@ -1,10 +1,8 @@
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import SEO from "@/components/SEO";
-import TldrDetailPage from "@/components/tldr/TldrDetailPage";
-import { GetTldrCount, GetTldrList, GetTldrData } from "@/data";
-import type { TldrDataType, TldrListType } from "@/types";
-import { TLDR_CHUNK_SIZE } from "../default";
+import TldrDetail from "@/components/tldr/TldrDetail";
+import { GetTldrList, GetTldrData } from "@/data";
+import type { TldrDataType } from "@/types";
 
 ////////////////////////////////////////////////////////////////////////////////
 // https://beta.nextjs.org/docs/api-reference/metadata#generatemetadata-function
@@ -36,56 +34,27 @@ export async function generateMetadata({
 // Make this page statically generated, with dynamic params
 export const dynamicParams = true;
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const tldrCount = await GetTldrCount({
+  const tldrList = await GetTldrList({
     language: "en",
+    page: 1,
   });
-
-  const pageCount = Math.ceil(tldrCount / TLDR_CHUNK_SIZE);
-
-  const pathsList = [];
-  for (let i = 0; i < pageCount; i++) {
-    let tldrList = await GetTldrList({
-      language: "en",
-      page: i + 1,
-    });
-    pathsList.push(...tldrList.map((tldr) => ({ slug: tldr.slug })));
-  }
-
+  const pathsList = tldrList.map((tldr) => ({ slug: tldr.slug }));
   return pathsList.slice(0, 1);
 }
 // End of static generation
 //////////////////////////////////////////////////////////////////////
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function TldrDetailPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const slug = params.slug;
-
-  const tldrCount = await GetTldrCount({
-    language: "en",
-  });
-
-  const pageCount = Math.ceil(tldrCount / TLDR_CHUNK_SIZE);
-
-  const tldrListData = [];
-  for (let i = 0; i < pageCount; i++) {
-    let tldrList = await GetTldrList({
-      language: "en",
-      page: i + 1,
-    });
-    tldrListData.push(...tldrList);
-  }
-
-  const findTldr = tldrListData.find(
-    (tldr: TldrListType) => tldr.slug === slug,
-  );
-
-  if (!findTldr) {
-    return notFound();
-  }
 
   const tldrData: TldrDataType = await GetTldrData({
     language: "en",
     slug: slug,
   });
 
-  return <TldrDetailPage tldrData={tldrData} slug={slug} />;
+  return <TldrDetail tldrData={tldrData} slug={slug} />;
 }

@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import PageTitle from "@/components/PageTitle";
 import type { TldrDataType } from "@/types";
 
-export default function TldrDetailPage({
+export default function TldrDetail({
   tldrData,
   slug,
 }: {
