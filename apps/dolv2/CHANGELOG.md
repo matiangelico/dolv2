@@ -1,5 +1,11 @@
 # dolv2
 
+## 2.1.0
+
+### Minor Changes
+
+- Refactor
+
 ## 2.0.1
 
 ### Patch Changes
