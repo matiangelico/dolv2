@@ -1,5 +1,11 @@
 # dolv2
 
+## 2.1.1
+
+### Patch Changes
+
+- 96353a4: i18n
+
 ## 2.1.0
 
 ### Minor Changes

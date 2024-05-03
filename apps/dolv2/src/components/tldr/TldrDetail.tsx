@@ -1,15 +1,22 @@
 import Image from "@/components/Image";
+import Link from "@/components/Link";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageTitle from "@/components/PageTitle";
+import { i18nLanguages } from "@/data";
+import { GetDictionary } from "@/utils";
 import type { TldrDataType } from "@/types";
 
-export default function TldrDetail({
+export default async function TldrDetail({
   tldrData,
   slug,
+  language,
 }: {
   tldrData: TldrDataType;
   slug: string;
+  language: string;
 }) {
+  const dictionary = await GetDictionary(language);
+
   return (
     <>
       <PageTitle title={tldrData.title} description={tldrData.short_summary} />
@@ -18,14 +25,31 @@ export default function TldrDetail({
         <div className="col-span-12">
           <Breadcrumb
             links={[
-              { text: "Home", href: "/" },
-              { text: "TL;DR", href: "/tldr" },
-              { text: tldrData.title, href: `/tldr/${slug}` },
+              { text: `${dictionary.navbar.home}`, href: `/${language}` },
+              { text: `${dictionary.tldr.title}`, href: `/${language}/tldr` },
+              { text: tldrData.title, href: `/${language}/tldr/${slug}` },
             ]}
           />
         </div>
 
-        <div className="col-span-12 md:col-span-8">{tldrData.description}</div>
+        <div className="col-span-12 md:col-span-8 space-y-5">
+          <p>{tldrData.description}</p>
+
+          <h2 className="text-2xl font-bold">
+            {dictionary.browse_in_other_languages}
+          </h2>
+          <div>
+            {i18nLanguages
+              .filter((lang) => lang.short_code !== language)
+              .map((lang) => (
+                <Link href={`/${lang.short_code}/tldr/${slug}`}>
+                  <span
+                    className={`fi fi-${lang.flag_code} m-2 rounded text-3xl shadow-lg`}
+                  ></span>
+                </Link>
+              ))}
+          </div>
+        </div>
 
         <div className="col-span-12 md:col-span-4">
           {tldrData.wiki.image && (

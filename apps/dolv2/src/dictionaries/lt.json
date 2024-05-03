@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Mokytis iš praeities, kurti ateitį"
+  },
+  "homepage": {
+    "title": "Sveiki atvykę į Dolores v2",
+    "description": "Išbandykite visas naujas Dolores v2 funkcijas ir patobulinimus.",
+    "cta": "Peržiūrėkite visus projektus"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Sudėtingų temų paaiškinimas paprastais terminais. Gaukite greitas įvairių temų santraukas."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Namai"
+  },
+  "pagination": {
+    "next": "Kitas",
+    "previous": "Ankstesnis"
+  },
+  "browse_in_other_languages": "Naršykite kitomis kalbomis"
+}

@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Minevikust õppimine, tuleviku ehitamine"
+  },
+  "homepage": {
+    "title": "Tere tulemast Dolores v2-sse",
+    "description": "Tutvuge kõigi Dolores v2 uute funktsioonide ja täiustustega.",
+    "cta": "Tutvuge kõigi projektidega"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Keeruliste teemade lihtsate sõnadega selgitamine. Hankige kiireid kokkuvõtteid erinevatel teemadel."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Kodu"
+  },
+  "pagination": {
+    "next": "Edasi",
+    "previous": "Eelmine"
+  },
+  "browse_in_other_languages": "Sirvige teistes keeltes"
+}

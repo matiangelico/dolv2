@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Ag foghlaim ón am atá thart, ag tógáil an todhchaí"
+  },
+  "homepage": {
+    "title": "Fáilte go Dolores v2",
+    "description": "Déan iniúchadh ar ghnéithe agus feabhsuithe nua Dolores v2.",
+    "cta": "Déan iniúchadh ar gach tionscadal"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Ag míniú topaicí casta i dtéarmaí simplí. Faigh achoimrí tapa ar ábhair éagsúla."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Baile"
+  },
+  "pagination": {
+    "next": "Ar aghaidh",
+    "previous": "Roimhe Seo"
+  },
+  "browse_in_other_languages": "Brabhsáil i dteangacha eile"
+}

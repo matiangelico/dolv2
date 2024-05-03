@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Keçmişdən öyrənmək, gələcəyi qurmaq"
+  },
+  "homepage": {
+    "title": "Dolores v2-ə xoş gəlmisiniz",
+    "description": "Dolores v2-nin bütün yeni xüsusiyyətlərini və təkmilləşdirmələrini araşdırın.",
+    "cta": "Bütün layihələri araşdırın"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Mürəkkəb mövzuları sadə sözlərlə izah etmək. Müxtəlif mövzuların qısa xülasəsini əldə edin."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Ev"
+  },
+  "pagination": {
+    "next": "Sonrakı",
+    "previous": "Əvvəlki"
+  },
+  "browse_in_other_languages": "Digər dillərdə axtarın"
+}

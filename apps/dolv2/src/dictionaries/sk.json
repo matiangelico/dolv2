@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Učiť sa z minulosti, budovať budúcnosť"
+  },
+  "homepage": {
+    "title": "Vitajte v Dolores v2",
+    "description": "Preskúmajte všetky nové funkcie a vylepšenia Dolores v2.",
+    "cta": "Preskúmajte všetky projekty"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Vysvetlenie zložitých tém jednoduchým spôsobom. Získajte rýchle súhrny rôznych tém."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Domov"
+  },
+  "pagination": {
+    "next": "Ďalšie",
+    "previous": "Predchádzajúce"
+  },
+  "browse_in_other_languages": "Prehľadávať v iných jazykoch"
+}

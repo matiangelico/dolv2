@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Mācīties no pagātnes, veidot nākotni"
+  },
+  "homepage": {
+    "title": "Laipni lūdzam Dolores v2",
+    "description": "Izpētiet visas Dolores v2 jaunās funkcijas un uzlabojumus.",
+    "cta": "Izpētiet visus projektus"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Sarežģītu tēmu skaidrošana vienkāršā izteiksmē. Saņemiet ātru dažādu tēmu kopsavilkumus."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Mājas"
+  },
+  "pagination": {
+    "next": "Nākamais",
+    "previous": "Iepriekšējais"
+  },
+  "browse_in_other_languages": "Pārlūkojiet citās valodās"
+}

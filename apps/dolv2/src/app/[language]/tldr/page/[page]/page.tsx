@@ -2,22 +2,36 @@ import type { Metadata } from "next";
 import SEO from "@/components/SEO";
 import TldrHome from "@/components/tldr/TldrHome";
 import { GetTldrList, GetTldrCount } from "@/data";
+import { GetDictionary } from "@/utils";
 import { TLDR_CHUNK_SIZE } from "../../default";
 
-export function generateMetadata(): Metadata {
+// Metadata generation
+export async function generateMetadata({
+  params,
+}: {
+  params: { language: string };
+}): Promise<Metadata> {
+  const language = params.language;
+
+  const dictionary = await GetDictionary(language);
+
   return SEO({
-    title: "TL;DR",
-    description:
-      "Explaining complex topics in simple terms. Get quick summaries of various topics.",
+    title: dictionary.tldr.title,
+    description: dictionary.tldr.description,
     keywords: ["tldr", "summary", "explanation"],
+    language: language,
   });
 }
+// End of metadata generation
 
-//////////////////////////////////////////////////////////////////////
-// https://beta.nextjs.org/docs/data-fetching/generating-static-params
-// Make this page statically generated, with dynamic params
+// Static page generation
 export const dynamicParams = true;
-export async function generateStaticParams(): Promise<{ page: string }[]> {
+export async function generateStaticParams(): Promise<
+  {
+    language: string;
+    page: string;
+  }[]
+> {
   const tldrCount = await GetTldrCount({
     language: "en",
   });
@@ -25,30 +39,35 @@ export async function generateStaticParams(): Promise<{ page: string }[]> {
   const pageCount = Math.ceil(tldrCount / TLDR_CHUNK_SIZE);
 
   const pathsList = [];
-  // ignore page 1 (index page)
+
   for (let i = 1; i < pageCount; i++) {
-    pathsList.push({ page: (i + 1).toString() });
+    pathsList.push({
+      language: "en",
+      page: (i + 1).toString(),
+    });
+    break;
   }
 
-  return pathsList.slice(0, 1);
+  return pathsList;
 }
 // End of static generation
-//////////////////////////////////////////////////////////////////////
 
+// Page generation
 export default async function TldrEnPagePage({
   params,
 }: {
-  params: { page: string };
+  params: { language: string; page: string };
 }): Promise<JSX.Element> {
+  const language = params.language;
   const page = parseInt(params.page);
 
   const tldrListData = GetTldrList({
-    language: "en",
+    language: language,
     page: page,
   });
 
   const tldrCountData = GetTldrCount({
-    language: "en",
+    language: language,
   });
 
   const [tldrList, tldrCount] = await Promise.all([
@@ -61,7 +80,9 @@ export default async function TldrEnPagePage({
       tldrList={tldrList}
       totalPage={Math.ceil(tldrCount / TLDR_CHUNK_SIZE)}
       activePage={page}
-      baseUrl="/tldr"
+      baseUrl={`/${language}/tldr`}
+      language={language}
     />
   );
 }
+// End of page generation

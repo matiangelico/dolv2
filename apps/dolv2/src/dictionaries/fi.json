@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Menneisyydestä oppiminen, tulevaisuuden rakentaminen"
+  },
+  "homepage": {
+    "title": "Tervetuloa Dolores v2:een",
+    "description": "Tutustu kaikkiin Dolores v2:n uusiin ominaisuuksiin ja parannuksiin.",
+    "cta": "Tutustu kaikkiin projekteihin"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Monimutkaisten aiheiden selittäminen yksinkertaisin sanoin. Hanki nopeita yhteenvetoja eri aiheista."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Koti"
+  },
+  "pagination": {
+    "next": "Seuraava",
+    "previous": "Edellinen"
+  },
+  "browse_in_other_languages": "Selaa muilla kielillä"
+}

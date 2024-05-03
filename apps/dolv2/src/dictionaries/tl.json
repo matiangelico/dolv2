@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Pag-aaral mula sa nakaraan, pagbuo ng hinaharap"
+  },
+  "homepage": {
+    "title": "Maligayang pagdating sa Dolores v2",
+    "description": "Galugarin ang lahat ng mga bagong feature at pagpapahusay ng Dolores v2.",
+    "cta": "Galugarin ang lahat ng mga proyekto"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Pagpapaliwanag ng mga kumplikadong paksa sa mga simpleng termino. Kumuha ng mabilis na mga buod ng iba't ibang paksa."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Bahay"
+  },
+  "pagination": {
+    "next": "Susunod",
+    "previous": "Nakaraang"
+  },
+  "browse_in_other_languages": "Mag-browse sa ibang mga wika"
+}

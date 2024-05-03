@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Leren van het verleden, bouwen aan de toekomst"
+  },
+  "homepage": {
+    "title": "Welkom bij Dolores v2",
+    "description": "Ontdek alle nieuwe functies en verbeteringen van Dolores v2.",
+    "cta": "Ontdek alle projecten"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Complexe onderwerpen in eenvoudige bewoordingen uitleggen. Krijg snelle samenvattingen van verschillende onderwerpen."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Thuis"
+  },
+  "pagination": {
+    "next": "Volgende",
+    "previous": "Vorig"
+  },
+  "browse_in_other_languages": "Blader in andere talen"
+}

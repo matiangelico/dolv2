@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Învățând din trecut, construind viitorul"
+  },
+  "homepage": {
+    "title": "Bun venit la Dolores v2",
+    "description": "Explorați toate noile funcții și îmbunătățiri ale Dolores v2.",
+    "cta": "Explorați toate proiectele"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Explicarea subiectelor complexe în termeni simpli. Obțineți rezumate rapide ale diferitelor subiecte."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Acasă"
+  },
+  "pagination": {
+    "next": "Următorul",
+    "previous": "Anterior"
+  },
+  "browse_in_other_languages": "Răsfoiți în alte limbi"
+}

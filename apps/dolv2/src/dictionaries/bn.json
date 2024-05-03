@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "অতীত থেকে শিক্ষা নিয়ে ভবিষ্যৎ গড়ি"
+  },
+  "homepage": {
+    "title": "Dolores v2 তে স্বাগতম",
+    "description": "Dolores v2 এর সমস্ত নতুন বৈশিষ্ট্য এবং উন্নতিগুলি অন্বেষণ করুন৷",
+    "cta": "সমস্ত প্রকল্প অন্বেষণ"
+  },
+  "tldr": {
+    "title": "টিএল; ডিআর",
+    "description": "জটিল বিষয়গুলোকে সহজ ভাষায় ব্যাখ্যা করা। বিভিন্ন বিষয়ের দ্রুত সারসংক্ষেপ পান।"
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "টিএল; ডিআর",
+    "home": "বাড়ি"
+  },
+  "pagination": {
+    "next": "পরবর্তী",
+    "previous": "আগে"
+  },
+  "browse_in_other_languages": "অন্যান্য ভাষায় ব্রাউজ করুন"
+}

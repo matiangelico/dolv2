@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "돌로레스 v2",
+    "description": "과거로부터 배우고, 미래를 건설하다"
+  },
+  "homepage": {
+    "title": "돌로레스 v2에 오신 것을 환영합니다",
+    "description": "돌로레스 v2의 모든 새로운 기능과 개선 사항을 살펴보세요.",
+    "cta": "모든 프로젝트 살펴보기"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "복잡한 주제를 간단한 용어로 설명합니다. 다양한 주제에 대한 빠른 요약을 받아보세요."
+  },
+  "dolores": "돌로레스",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "집"
+  },
+  "pagination": {
+    "next": "다음",
+    "previous": "이전의"
+  },
+  "browse_in_other_languages": "다른 언어로 찾아보기"
+}

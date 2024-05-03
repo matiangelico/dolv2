@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Duke mësuar nga e kaluara, duke ndërtuar të ardhmen"
+  },
+  "homepage": {
+    "title": "Mirë se vini në Dolores v2",
+    "description": "Eksploroni të gjitha veçoritë dhe përmirësimet e reja të Dolores v2.",
+    "cta": "Eksploroni të gjitha projektet"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Shpjegimi i temave komplekse me terma të thjeshtë. Merrni përmbledhje të shpejta të temave të ndryshme."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Shtëpi"
+  },
+  "pagination": {
+    "next": "Tjetra",
+    "previous": "E mëparshme"
+  },
+  "browse_in_other_languages": "Shfletoni në gjuhë të tjera"
+}

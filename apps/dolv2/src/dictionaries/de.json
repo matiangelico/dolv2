@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Aus der Vergangenheit lernen, die Zukunft gestalten"
+  },
+  "homepage": {
+    "title": "Willkommen bei Dolores v2",
+    "description": "Entdecken Sie alle neuen Funktionen und Verbesserungen von Dolores v2.",
+    "cta": "Entdecken Sie alle Projekte"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Komplexe Themen in einfachen Worten erklären. Erhalten Sie schnelle Zusammenfassungen verschiedener Themen."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Heim"
+  },
+  "pagination": {
+    "next": "Nächste",
+    "previous": "Vorherige"
+  },
+  "browse_in_other_languages": "Stöbern Sie in anderen Sprachen"
+}

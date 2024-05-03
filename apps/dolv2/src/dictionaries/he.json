@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "דולורס v2",
+    "description": "לומדים מהעבר, בונים את העתיד"
+  },
+  "homepage": {
+    "title": "ברוכים הבאים לדולורס v2",
+    "description": "חקור את כל התכונות והשיפורים החדשים של Dolores v2.",
+    "cta": "חקור את כל הפרויקטים"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "הסבר על נושאים מורכבים במילים פשוטות. קבלו סיכומים מהירים של נושאים שונים."
+  },
+  "dolores": "דולורס",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "בית"
+  },
+  "pagination": {
+    "next": "הַבָּא",
+    "previous": "קודם"
+  },
+  "browse_in_other_languages": "דפדף בשפות אחרות"
+}

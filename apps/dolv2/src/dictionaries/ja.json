@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "ドロレス v2",
+    "description": "過去から学び、未来を築く"
+  },
+  "homepage": {
+    "title": "ドロレス v2 へようこそ",
+    "description": "ドロレス v2 のすべての新機能と改善点をご覧ください。",
+    "cta": "すべてのプロジェクトを探索する"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "複雑なトピックを簡単な言葉で説明します。 さまざまなトピックの概要を簡単に入手できます。"
+  },
+  "dolores": "ドロレス",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "家"
+  },
+  "pagination": {
+    "next": "次",
+    "previous": "前の"
+  },
+  "browse_in_other_languages": "他の言語で閲覧する"
+}

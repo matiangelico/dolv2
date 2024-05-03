@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Belajar dari masa lalu, membina masa depan"
+  },
+  "homepage": {
+    "title": "Selamat datang ke Dolores v2",
+    "description": "Terokai semua ciri baharu dan penambahbaikan Dolores v2.",
+    "cta": "Terokai semua projek"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Menjelaskan topik yang kompleks dengan istilah yang mudah. Dapatkan ringkasan cepat pelbagai topik."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Rumah"
+  },
+  "pagination": {
+    "next": "Seterusnya",
+    "previous": "Sebelumnya"
+  },
+  "browse_in_other_languages": "Semak imbas dalam bahasa lain"
+}

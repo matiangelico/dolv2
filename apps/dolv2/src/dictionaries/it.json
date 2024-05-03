@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Imparare dal passato, costruire il futuro"
+  },
+  "homepage": {
+    "title": "Benvenuti in Dolores v2",
+    "description": "Esplora tutte le nuove funzionalità e i miglioramenti di Dolores v2.",
+    "cta": "Esplora tutti i progetti"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Spiegare argomenti complessi in termini semplici. Ottieni brevi riepiloghi di vari argomenti."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Casa"
+  },
+  "pagination": {
+    "next": "Prossima",
+    "previous": "Precedente"
+  },
+  "browse_in_other_languages": "Sfoglia in altre lingue"
+}

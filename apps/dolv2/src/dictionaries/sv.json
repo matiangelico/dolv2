@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Att lära av det förflutna, bygga framtiden"
+  },
+  "homepage": {
+    "title": "Välkommen till Dolores v2",
+    "description": "Utforska alla nya funktioner och förbättringar av Dolores v2.",
+    "cta": "Utforska alla projekt"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Förklara komplexa ämnen i enkla termer. Få snabba sammanfattningar av olika ämnen."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Hem"
+  },
+  "pagination": {
+    "next": "Nästa",
+    "previous": "Tidigare"
+  },
+  "browse_in_other_languages": "Bläddra på andra språk"
+}

@@ -3,16 +3,20 @@ import Footer from "@/components/Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
+  language: string;
 }
 
-export default function Layout({ children }: LayoutProps): JSX.Element {
+export default function Layout({
+  language,
+  children,
+}: LayoutProps): JSX.Element {
   return (
     <>
-      <Navbar />
+      <Navbar language={language} />
 
       <div className="container mx-auto">{children}</div>
 
-      <Footer />
+      <Footer language={language} />
     </>
   );
 }

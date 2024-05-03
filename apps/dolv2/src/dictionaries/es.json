@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Aprendiendo del pasado, construyendo el futuro"
+  },
+  "homepage": {
+    "title": "Bienvenidos a Doloresv2",
+    "description": "Explora todas las nuevas características y mejoras de Dolores v2.",
+    "cta": "Explora todos los proyectos"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Explicar temas complejos en términos simples. Obtenga resúmenes rápidos de varios temas."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Hogar"
+  },
+  "pagination": {
+    "next": "Próxima",
+    "previous": "Previa"
+  },
+  "browse_in_other_languages": "Navegar en otros idiomas"
+}

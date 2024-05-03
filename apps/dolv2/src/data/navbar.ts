@@ -2,11 +2,11 @@ import type { NavbarLinkType } from "@/types";
 
 const NavbarLinksData: NavbarLinkType[] = [
   {
-    text: "Home",
+    text: "home",
     href: "/",
   },
   {
-    text: "TL;DR",
+    text: "tldr",
     href: "/tldr",
   },
 ];

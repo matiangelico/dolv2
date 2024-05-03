@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Tanulni a múltból, építeni a jövőt"
+  },
+  "homepage": {
+    "title": "Üdvözöljük a Dolores v2",
+    "description": "Fedezze fel a Dolores v2 összes új funkcióját és fejlesztését.",
+    "cta": "Fedezze fel az összes projektet"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Összetett témák egyszerű megfogalmazása. Gyors összefoglalók a különböző témákról."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "itthon"
+  },
+  "pagination": {
+    "next": "Következő",
+    "previous": "Előző"
+  },
+  "browse_in_other_languages": "Böngésszen más nyelveken"
+}

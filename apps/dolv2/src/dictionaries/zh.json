@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "多洛雷斯 v2",
+    "description": "汲取过去的教训，建设未来"
+  },
+  "homepage": {
+    "title": "欢迎来到多洛雷斯 v2",
+    "description": "探索 Dolores v2 的所有新功能和改进。",
+    "cta": "探索所有项目"
+  },
+  "tldr": {
+    "title": "长话短说",
+    "description": "用简单的术语解释复杂的主题。 快速总结各种主题。"
+  },
+  "dolores": "多洛雷斯",
+  "navbar": {
+    "tldr": "长话短说",
+    "home": "家"
+  },
+  "pagination": {
+    "next": "下一个",
+    "previous": "以前的"
+  },
+  "browse_in_other_languages": "浏览其他语言"
+}

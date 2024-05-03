@@ -3,26 +3,29 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "@ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@ui/sheet";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import { SiteMetadata, NavbarLinksData } from "@/data";
+import { NavbarLinksData } from "@/data";
+import { GetDictionary } from "@/utils";
 
-export default function Navbar() {
+export default async function Navbar({ language }: { language: string }) {
+  const dictionary = await GetDictionary(language);
+
   return (
     <header className="container flex h-20 w-full shrink-0 items-center px-4 md:px-6">
-      <Link className="mr-6 font-bold text-xl" href="/">
-        {SiteMetadata.title}
+      <Link className="ms-6 font-bold text-xl" href={`/${language}`}>
+        {dictionary.sitemetadata.title}
       </Link>
 
-      <nav className="ml-auto hidden lg:flex gap-6">
+      <nav className="ms-auto hidden lg:flex gap-6">
         {NavbarLinksData.map((link, index) => (
-          <Link key={index} href={link.href}>
+          <Link key={index} href={`/${language}${link.href}`}>
             <Button variant="ghost" size="sm">
-              {link.text}
+              {dictionary.navbar[link.text]}
             </Button>
           </Link>
         ))}
       </nav>
 
-      <div className="ml-auto space-x-2">
+      <div className="ms-auto space-x-2">
         <ThemeSwitcher />
 
         <Sheet>

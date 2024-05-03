@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Učenje iz preteklosti, gradnja prihodnosti"
+  },
+  "homepage": {
+    "title": "Dobrodošli v Dolores v2",
+    "description": "Raziščite vse nove funkcije in izboljšave Dolores v2.",
+    "cta": "Raziščite vse projekte"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Razlaga kompleksnih tem s preprostimi izrazi. Pridobite hitre povzetke različnih tem."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "domov"
+  },
+  "pagination": {
+    "next": "Naslednji",
+    "previous": "Prejšnja"
+  },
+  "browse_in_other_languages": "Brskajte v drugih jezikih"
+}

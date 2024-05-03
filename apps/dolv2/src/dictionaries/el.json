@@ -1,0 +1,25 @@
+{
+  "sitemetadata": {
+    "title": "Dolores v2",
+    "description": "Μαθαίνοντας από το παρελθόν, χτίζοντας το μέλλον"
+  },
+  "homepage": {
+    "title": "Καλώς ήρθατε στο Dolores v2",
+    "description": "Εξερευνήστε όλες τις νέες δυνατότητες και βελτιώσεις του Dolores v2.",
+    "cta": "Εξερευνήστε όλα τα έργα"
+  },
+  "tldr": {
+    "title": "TL;DR",
+    "description": "Εξήγηση σύνθετων θεμάτων με απλούς όρους. Λάβετε γρήγορες περιλήψεις διαφόρων θεμάτων."
+  },
+  "dolores": "Dolores",
+  "navbar": {
+    "tldr": "TL;DR",
+    "home": "Σπίτι"
+  },
+  "pagination": {
+    "next": "Επόμενο",
+    "previous": "Προηγούμενος"
+  },
+  "browse_in_other_languages": "Περιήγηση σε άλλες γλώσσες"
+}
