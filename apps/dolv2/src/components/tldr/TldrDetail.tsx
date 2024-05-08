@@ -1,7 +1,10 @@
+import { Suspense } from "react";
 import Image from "@/components/Image";
 import Link from "@/components/Link";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageTitle from "@/components/PageTitle";
+import TldrRecommendationSkeleton from "@/components/Skeleton/tldr/TldrRecommendationSkeleton";
+import TldrRecommendation from "./TldrRecommendation";
 import { i18nLanguages } from "@/data";
 import { GetDictionary } from "@/utils";
 import type { TldrDataType } from "@/types";
@@ -35,20 +38,26 @@ export default async function TldrDetail({
         <div className="col-span-12 md:col-span-8 space-y-5">
           <p>{tldrData.description}</p>
 
-          <h2 className="text-2xl font-bold">
-            {dictionary.browse_in_other_languages}
-          </h2>
-          <div>
-            {i18nLanguages
-              .filter((lang) => lang.short_code !== language)
-              .map((lang) => (
-                <Link href={`/${lang.short_code}/tldr/${slug}`}>
-                  <span
-                    className={`fi fi-${lang.flag_code} m-2 rounded text-3xl shadow-lg`}
-                  ></span>
-                </Link>
-              ))}
-          </div>
+          <>
+            <h2 className="text-2xl font-bold">
+              {dictionary.browse_in_other_languages}
+            </h2>
+            <div>
+              {i18nLanguages
+                .filter((lang) => lang.short_code !== language)
+                .map((lang) => (
+                  <Link href={`/${lang.short_code}/tldr/${slug}`}>
+                    <span
+                      className={`fi fi-${lang.flag_code} m-2 rounded text-3xl shadow-lg`}
+                    ></span>
+                  </Link>
+                ))}
+            </div>
+          </>
+
+          <Suspense fallback={<TldrRecommendationSkeleton />}>
+            <TldrRecommendation language={language} slug={slug} />
+          </Suspense>
         </div>
 
         <div className="col-span-12 md:col-span-4">

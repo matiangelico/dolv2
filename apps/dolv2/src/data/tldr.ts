@@ -70,3 +70,28 @@ export async function GetTldrData({
 
   return (await res.json()) as TldrDataType;
 }
+
+export async function GetTldrRecommendation({
+  language,
+  slug,
+}: {
+  language: string;
+  slug: string;
+}): Promise<TldrListType[]> {
+  const res = await fetch(
+    `${process.env.BACKEND_URL ?? ""}/tldr/${language}/recommendation/${slug}/`,
+    {
+      method: "GET",
+      headers: {
+        Authorization: `Token ${process.env.BACKEND_TOKEN ?? ""}`,
+      },
+      next: { revalidate: 3600 },
+    } as RequestInit,
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch tldr recommendation");
+  }
+
+  return (await res.json()) as TldrListType[];
+}

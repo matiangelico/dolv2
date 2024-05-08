@@ -1,6 +1,8 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import BreadcrumbSkeleton from "../BreadcrumbSkeleton";
 import PageTitleSkeleton from "../PageTitleSkeleton";
+import TldrBrowseInOtherLanguagesSkeleton from "./TldrBrowseInOtherLanguagesSkeleton";
+import TldrRecommendationSkeleton from "./TldrRecommendationSkeleton";
 
 export default function TldrDetailSkeleton() {
   return (
@@ -19,6 +21,10 @@ export default function TldrDetailSkeleton() {
           <Skeleton className="h-5 w-full" />
           <Skeleton className="h-5 w-full" />
           <Skeleton className="h-5 w-full" />
+
+          <TldrBrowseInOtherLanguagesSkeleton />
+
+          <TldrRecommendationSkeleton />
         </div>
 
         <div className="col-span-12 md:col-span-4">
