@@ -21,5 +21,9 @@
     "next": "Volgende",
     "previous": "Vorig"
   },
-  "browse_in_other_languages": "Blader in andere talen"
+  "browse_in_other_languages": "Blader in andere talen",
+  "source": "Bron",
+  "wikipedia": "Wikipedia",
+  "similar": "Vergelijkbaar",
+  "affiliate_link": "Partnerlink"
 }

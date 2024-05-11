@@ -3,6 +3,8 @@ import BreadcrumbSkeleton from "../BreadcrumbSkeleton";
 import PageTitleSkeleton from "../PageTitleSkeleton";
 import TldrBrowseInOtherLanguagesSkeleton from "./TldrBrowseInOtherLanguagesSkeleton";
 import TldrRecommendationSkeleton from "./TldrRecommendationSkeleton";
+import TldrBookRecommendationSkeleton from "./TldrBookRecommendationSkeleton";
+import TldrImageSkeleton from "./TldrImageSkeleton";
 
 export default function TldrDetailSkeleton() {
   return (
@@ -18,17 +20,16 @@ export default function TldrDetailSkeleton() {
           <Skeleton className="h-5 w-full" />
           <Skeleton className="h-5 w-full" />
           <Skeleton className="h-5 w-full" />
-          <Skeleton className="h-5 w-full" />
-          <Skeleton className="h-5 w-full" />
-          <Skeleton className="h-5 w-full" />
 
           <TldrBrowseInOtherLanguagesSkeleton />
 
           <TldrRecommendationSkeleton />
         </div>
 
-        <div className="col-span-12 md:col-span-4">
-          <Skeleton className="h-60 w-full" />
+        <div className="col-span-12 md:col-span-4 space-y-5">
+          <TldrImageSkeleton />
+
+          <TldrBookRecommendationSkeleton />
         </div>
       </div>
     </>

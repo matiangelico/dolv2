@@ -21,5 +21,9 @@
     "next": "Sonraki",
     "previous": "Öncesi"
   },
-  "browse_in_other_languages": "Diğer dillerde göz atın"
+  "browse_in_other_languages": "Diğer dillerde göz atın",
+  "source": "Kaynak",
+  "wikipedia": "Vikipedi",
+  "similar": "Benzer",
+  "affiliate_link": "Ortaklık bağlantısı"
 }

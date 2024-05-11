@@ -1,10 +1,13 @@
 import { Suspense } from "react";
-import Image from "@/components/Image";
 import Link from "@/components/Link";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageTitle from "@/components/PageTitle";
 import TldrRecommendationSkeleton from "@/components/Skeleton/tldr/TldrRecommendationSkeleton";
+import TldrBookRecommendationSkeleton from "@/components/Skeleton/tldr/TldrBookRecommendationSkeleton";
+import TldrImageSkeleton from "@/components/Skeleton/tldr/TldrImageSkeleton";
 import TldrRecommendation from "./TldrRecommendation";
+import TldrBookRecommendation from "./TldrBookRecommendation";
+import TldrImage from "./TldrImage";
 import { i18nLanguages } from "@/data";
 import { GetDictionary } from "@/utils";
 import type { TldrDataType } from "@/types";
@@ -36,9 +39,20 @@ export default async function TldrDetail({
         </div>
 
         <div className="col-span-12 md:col-span-8 space-y-5">
-          <p>{tldrData.description}</p>
+          <blockquote className="border-l-2 pl-6">
+            <p>{tldrData.description}</p>
+            <br />
+            <p>
+              {dictionary.source}:{" "}
+              <Link
+                href={`https://en.wikipedia.org/?curid=${tldrData.wiki.pageid}`}
+              >
+                {dictionary.wikipedia}
+              </Link>
+            </p>
+          </blockquote>
 
-          <>
+          <div className="py-5">
             <h2 className="text-2xl font-bold">
               {dictionary.browse_in_other_languages}
             </h2>
@@ -53,24 +67,25 @@ export default async function TldrDetail({
                   </Link>
                 ))}
             </div>
-          </>
+          </div>
 
-          <Suspense fallback={<TldrRecommendationSkeleton />}>
-            <TldrRecommendation language={language} slug={slug} />
-          </Suspense>
+          <div className="py-5">
+            <Suspense fallback={<TldrRecommendationSkeleton />}>
+              <TldrRecommendation language={language} slug={slug} />
+            </Suspense>
+          </div>
         </div>
 
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4 space-y-5">
           {tldrData.wiki.image && (
-            <Image
-              src={tldrData.wiki.image}
-              alt={tldrData.title}
-              width={1200}
-              height={630}
-              className="rounded-md shadow-lg"
-              unoptimized
-            />
+            <Suspense fallback={<TldrImageSkeleton />}>
+              <TldrImage tldrData={tldrData} language={language} />
+            </Suspense>
           )}
+
+          <Suspense fallback={<TldrBookRecommendationSkeleton />}>
+            <TldrBookRecommendation language={language} slug={slug} />
+          </Suspense>
         </div>
       </div>
     </>

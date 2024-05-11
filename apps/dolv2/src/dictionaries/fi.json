@@ -21,5 +21,9 @@
     "next": "Seuraava",
     "previous": "Edellinen"
   },
-  "browse_in_other_languages": "Selaa muilla kielillä"
+  "browse_in_other_languages": "Selaa muilla kielillä",
+  "source": "Lähde",
+  "wikipedia": "Wikipedia",
+  "similar": "Samanlaisia",
+  "affiliate_link": "Affiliate linkki"
 }

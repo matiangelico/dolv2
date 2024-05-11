@@ -21,5 +21,9 @@
     "next": "Tjetra",
     "previous": "E mëparshme"
   },
-  "browse_in_other_languages": "Shfletoni në gjuhë të tjera"
+  "browse_in_other_languages": "Shfletoni në gjuhë të tjera",
+  "source": "Burimi",
+  "wikipedia": "Wikipedia",
+  "similar": "I ngjashëm",
+  "affiliate_link": "Lidhja e Filialit"
 }

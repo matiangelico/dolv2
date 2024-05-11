@@ -21,5 +21,9 @@
     "next": "Nästa",
     "previous": "Tidigare"
   },
-  "browse_in_other_languages": "Bläddra på andra språk"
+  "browse_in_other_languages": "Bläddra på andra språk",
+  "source": "Källa",
+  "wikipedia": "Wikipedia",
+  "similar": "Liknande",
+  "affiliate_link": "Affiliate länk"
 }

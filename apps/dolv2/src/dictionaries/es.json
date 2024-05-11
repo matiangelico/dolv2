@@ -21,5 +21,9 @@
     "next": "Próxima",
     "previous": "Previa"
   },
-  "browse_in_other_languages": "Navegar en otros idiomas"
+  "browse_in_other_languages": "Navegar en otros idiomas",
+  "source": "Fuente",
+  "wikipedia": "Wikipedia",
+  "similar": "Similar",
+  "affiliate_link": "Enlace de afiliado"
 }

@@ -21,5 +21,9 @@
     "next": "다음",
     "previous": "이전의"
   },
-  "browse_in_other_languages": "다른 언어로 찾아보기"
+  "browse_in_other_languages": "다른 언어로 찾아보기",
+  "source": "원천",
+  "wikipedia": "위키피디아",
+  "similar": "비슷한",
+  "affiliate_link": "제휴 링크"
 }

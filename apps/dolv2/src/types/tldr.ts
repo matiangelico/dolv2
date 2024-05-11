@@ -9,6 +9,7 @@ interface TldrDataType {
   description: string;
   short_summary: string;
   wiki: {
+    wiki_slug: string;
     image: string | null;
     pageid: number;
   };

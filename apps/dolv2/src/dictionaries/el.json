@@ -21,5 +21,9 @@
     "next": "Επόμενο",
     "previous": "Προηγούμενος"
   },
-  "browse_in_other_languages": "Περιήγηση σε άλλες γλώσσες"
+  "browse_in_other_languages": "Περιήγηση σε άλλες γλώσσες",
+  "source": "Πηγή",
+  "wikipedia": "Βικιπαίδεια",
+  "similar": "Παρόμοιος",
+  "affiliate_link": "Σύνδεσμος συνεργατών"
 }

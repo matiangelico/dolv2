@@ -21,5 +21,9 @@
     "next": "次",
     "previous": "前の"
   },
-  "browse_in_other_languages": "他の言語で閲覧する"
+  "browse_in_other_languages": "他の言語で閲覧する",
+  "source": "ソース",
+  "wikipedia": "ウィキペディア",
+  "similar": "似ている",
+  "affiliate_link": "アフィリエイトリンク"
 }

@@ -21,5 +21,9 @@
     "next": "ต่อไป",
     "previous": "ก่อนหน้า"
   },
-  "browse_in_other_languages": "เรียกดูในภาษาอื่น ๆ"
+  "browse_in_other_languages": "เรียกดูในภาษาอื่น ๆ",
+  "source": "แหล่งที่มา",
+  "wikipedia": "วิกิพีเดีย",
+  "similar": "คล้ายกัน",
+  "affiliate_link": "ลิงค์พันธมิตร"
 }

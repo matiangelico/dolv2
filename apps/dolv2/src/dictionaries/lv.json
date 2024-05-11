@@ -21,5 +21,9 @@
     "next": "Nākamais",
     "previous": "Iepriekšējais"
   },
-  "browse_in_other_languages": "Pārlūkojiet citās valodās"
+  "browse_in_other_languages": "Pārlūkojiet citās valodās",
+  "source": "Avots",
+  "wikipedia": "Wikipedia",
+  "similar": "Līdzīgi",
+  "affiliate_link": "Filiāles saite"
 }

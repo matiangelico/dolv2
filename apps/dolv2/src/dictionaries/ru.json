@@ -21,5 +21,9 @@
     "next": "Следующий",
     "previous": "Предыдущий"
   },
-  "browse_in_other_languages": "Просмотр на других языках"
+  "browse_in_other_languages": "Просмотр на других языках",
+  "source": "Источник",
+  "wikipedia": "Википедия",
+  "similar": "Похожий",
+  "affiliate_link": "Партнерская ссылка"
 }

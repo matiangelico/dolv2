@@ -1,4 +1,4 @@
-import type { TldrDataType, TldrListType } from "@/types";
+import type { TldrDataType, TldrListType, AmazonBookType } from "@/types";
 
 export async function GetTldrCount({
   language,
@@ -94,4 +94,29 @@ export async function GetTldrRecommendation({
   }
 
   return (await res.json()) as TldrListType[];
+}
+
+export async function GetTldrBookRecommendation({
+  language,
+  slug,
+}: {
+  language: string;
+  slug: string;
+}): Promise<AmazonBookType[]> {
+  const res = await fetch(
+    `${process.env.BACKEND_URL ?? ""}/tldr/${language}/recommendation/book/${slug}/`,
+    {
+      method: "GET",
+      headers: {
+        Authorization: `Token ${process.env.BACKEND_TOKEN ?? ""}`,
+      },
+      next: { revalidate: 3600 },
+    } as RequestInit,
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch tldr recommendation");
+  }
+
+  return (await res.json()) as AmazonBookType[];
 }

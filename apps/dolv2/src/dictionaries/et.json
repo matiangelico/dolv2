@@ -21,5 +21,9 @@
     "next": "Edasi",
     "previous": "Eelmine"
   },
-  "browse_in_other_languages": "Sirvige teistes keeltes"
+  "browse_in_other_languages": "Sirvige teistes keeltes",
+  "source": "Allikas",
+  "wikipedia": "Vikipeedia",
+  "similar": "Sarnased",
+  "affiliate_link": "Sidusettevõtte link"
 }
