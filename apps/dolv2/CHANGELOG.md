@@ -1,5 +1,11 @@
 # dolv2
 
+## 2.1.4
+
+### Patch Changes
+
+- Github Emoji
+
 ## 2.1.3
 
 ### Patch Changes

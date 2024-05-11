@@ -4,7 +4,14 @@ import { SiteMetadata, i18nLanguages } from "@/data";
 const langaugeList = i18nLanguages.map((lang) => lang.short_code);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "tldr"].map((route) => ({
+  const routes = ["github-emoji"].map((route) => ({
+    url: `${SiteMetadata.site_url}/en/${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as "weekly",
+    priority: 1,
+  }));
+
+  const i18nroutes = ["", "tldr"].map((route) => ({
     url: `${SiteMetadata.site_url}/en/${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as "weekly",
@@ -19,5 +26,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  return [...routes];
+  return [...routes, ...i18nroutes];
 }

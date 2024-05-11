@@ -68,6 +68,9 @@ importers:
       flag-icons:
         specifier: ^7.2.1
         version: 7.2.1
+      github-emoji:
+        specifier: ^1.2.0
+        version: 1.2.0
       lucide-react:
         specifier: ^0.373.0
         version: 0.373.0(react@18.2.0)
@@ -2082,6 +2085,9 @@ packages:
 
   git-url-parse@13.1.1:
     resolution: {integrity: sha512-PCFJyeSSdtnbfhSNRw9Wk96dDCNx+sogTe4YNXeXSJxt7xz5hvXekuRn9JX7m+Mf4OscCu8h+mtAl3+h5Fo8lQ==}
+
+  github-emoji@1.2.0:
+    resolution: {integrity: sha512-+oqVqVMjVR7AUvTsaYkXAIyqFga+YyBfBCQd3kmXPoKuNXexkolaMuFE15//7WNAHyFv3sAF3rjQqoVFGwEK8g==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -6039,6 +6045,8 @@ snapshots:
   git-url-parse@13.1.1:
     dependencies:
       git-up: 7.0.0
+
+  github-emoji@1.2.0: {}
 
   glob-parent@5.1.2:
     dependencies:

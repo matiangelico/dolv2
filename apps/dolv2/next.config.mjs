@@ -28,6 +28,11 @@ const nextConfig = {
         destination: "/:language/tldr",
         permanent: true,
       },
+      {
+        source: "/github-emoji",
+        destination: "/en/github-emoji",
+        permanent: true,
+      },
     ];
   },
 };
