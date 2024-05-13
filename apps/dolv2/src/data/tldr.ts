@@ -9,6 +9,9 @@ export async function GetTldrCount({
     `${process.env.BACKEND_URL ?? ""}/tldr/${language}/count/`,
     {
       method: "GET",
+      headers: {
+        Authorization: `Token ${process.env.BACKEND_TOKEN ?? ""}`,
+      },
       next: { revalidate: 3600 },
     } as RequestInit,
   );

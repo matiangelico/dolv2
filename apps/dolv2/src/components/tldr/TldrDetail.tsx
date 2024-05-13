@@ -5,9 +5,11 @@ import PageTitle from "@/components/PageTitle";
 import TldrRecommendationSkeleton from "@/components/Skeleton/tldr/TldrRecommendationSkeleton";
 import TldrBookRecommendationSkeleton from "@/components/Skeleton/tldr/TldrBookRecommendationSkeleton";
 import TldrImageSkeleton from "@/components/Skeleton/tldr/TldrImageSkeleton";
+import MerchSkeleton from "@/components/Skeleton/Merch";
 import TldrRecommendation from "./TldrRecommendation";
 import TldrBookRecommendation from "./TldrBookRecommendation";
 import TldrImage from "./TldrImage";
+import Merch from "@/components/Merch";
 import { i18nLanguages } from "@/data";
 import { GetDictionary } from "@/utils";
 import type { TldrDataType } from "@/types";
@@ -60,7 +62,10 @@ export default async function TldrDetail({
               {i18nLanguages
                 .filter((lang) => lang.short_code !== language)
                 .map((lang) => (
-                  <Link href={`/${lang.short_code}/tldr/${slug}`}>
+                  <Link
+                    href={`/${lang.short_code}/tldr/${slug}`}
+                    key={lang.short_code}
+                  >
                     <span
                       className={`fi fi-${lang.flag_code} m-2 rounded text-3xl shadow-lg`}
                     ></span>
@@ -82,6 +87,10 @@ export default async function TldrDetail({
               <TldrImage tldrData={tldrData} language={language} />
             </Suspense>
           )}
+
+          <Suspense fallback={<MerchSkeleton />}>
+            <Merch language={language} />
+          </Suspense>
 
           <Suspense fallback={<TldrBookRecommendationSkeleton />}>
             <TldrBookRecommendation language={language} slug={slug} />
