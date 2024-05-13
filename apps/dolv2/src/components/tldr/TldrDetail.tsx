@@ -10,6 +10,7 @@ import TldrRecommendation from "./TldrRecommendation";
 import TldrBookRecommendation from "./TldrBookRecommendation";
 import TldrImage from "./TldrImage";
 import Merch from "@/components/Merch";
+import Comment from "@/components/Comment";
 import { i18nLanguages } from "@/data";
 import { GetDictionary } from "@/utils";
 import type { TldrDataType } from "@/types";
@@ -73,6 +74,8 @@ export default async function TldrDetail({
                 ))}
             </div>
           </div>
+
+          <Comment />
 
           <div className="py-5">
             <Suspense fallback={<TldrRecommendationSkeleton />}>
